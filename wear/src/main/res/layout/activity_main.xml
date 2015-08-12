@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/marilyn_manson"
+        app:layout_box="all"/>
+
+    <TextView
+        android:id="@+id/ambient_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLargeInverse"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/never_gonna_gif_you_up"
+        android:visibility="gone"
+        app:layout_box="all"/>
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_box="all"/>
+
+
+</android.support.wearable.view.BoxInsetLayout>
